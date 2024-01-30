@@ -1,5 +1,5 @@
 # T3A1Workbook
-### GuangJian Chen
+### Ben Chen
 #### CAS022113
 ---
 
@@ -22,8 +22,8 @@ To further explain this workflow, an diagram is displayed below.
 
 ![Trunk-based diagram](docs/Q1/thunk.jpg)
 
-In the diagram, we can see the commits in the middle represents the trunk master branch. Developers create short-lived feature branches from trunk master branch and try the implememnt the feature in this branch. Once they pass test on their work, pull requests is submmited to merge the work into trunk. In the mean while, a Continuous Integration server which  is watching the trunk repository for changes and verifying if the trunk is bug-free will cherry pick the bugfix commit to merge into the corresponding release branch. The release branches are also being watched by the Continuous Integration server to ensure the code passes tests before being merge into realse version.
-In trunk-based workflow, cherry pick mergring is implemented from trunk to release branch to avoid risk of regression in case developer forget to merge bug-fixes back to trunk.
+In the diagram, we can see the commits in the middle represents the trunk master branch. Developers create short-lived feature branches from trunk master branch and try the implement the feature in this branch. Once they pass test on their work, pull requests is submitted to merge the work into trunk. In the mean while, a Continuous Integration server which  is watching the trunk repository for changes and verifying if the trunk is bug-free will cherry pick the bugfix commit to merge into the corresponding release branch. The release branches are also being watched by the Continuous Integration server to ensure the code passes tests before being merge into released version.
+In trunk-based workflow, cherry pick merging is implemented from trunk to release branch to avoid risk of regression in case developer forget to merge bug-fixes back to trunk.
 
 
 
@@ -126,7 +126,7 @@ In the planning stage, all the team members need to well understand different ex
 &nbsp; 
 For the team itself, the strengths and weakness of each team member need to be analyzed for decision making purpose. For the small business, the team need to fetch necessary marketing information and clarify what the small business want the web app to be. Although the small business normally would do the  marketing research for the targeted user and share the information with the team, the team still need to do basic marketing research such as user stories to understand the targeted user better.
 &nbsp; 
-After all the necessary marketing information being collected, the team should analyse and discuss the information, all the goals of different stages in development and deployment well be made and documented by decision making. The documented content should  consist of what tech stacks be used, how to meet the needs of the small business, what features need to highlighted and other supporting feature in the web app, the timeline scope of each task, what and how the development process and workflow is implemented in the web app design, what and how the tests to apply to ensure the web app to be free of bugs, etc.
+After all the necessary marketing information being collected, the team should analyze and discuss the information, all the goals of different stages in development and deployment well be made and documented by decision making. The documented content should  consist of what tech stacks be used, how to meet the needs of the small business, what features need to highlighted and other supporting feature in the web app, the timeline scope of each task, what and how the development process and workflow is implemented in the web app design, what and how the tests to apply to ensure the web app to be free of bugs, etc.
 &nbsp; 
 2. **Web application development and management**
 After the planning stage, the team is going to implement the developing process as planned in a time-limited manner. In these process, there are some factors involved as follow:
@@ -173,11 +173,11 @@ After I finished my Ruby and Rails two-sided marketing place app at the end of t
 
 * The skill of identifying the target group and the needs of them or problem needs to be solved in the market place.
   &nbsp; 
-* The skill of utilizing appropriate tools to design the overall plan. Using Trello to depict and track our tasks, arrange proper time management for each task and prioritize tasks in order. Using Balsamiq Wireframes app to design different viewport wireframes for the front end page design. Using graph drawing software to design sitemap and ERD(Entity Relationship Diagram).
+* The skill of utilizing appropriate tools to design the overall plan. Using Trello to depict and track our tasks, arrange proper time management for each task and prioritize tasks in order. Using Balsamiq wireframe app to design different viewport wireframes for the front end page design. Using graph drawing software to design sitemap and ERD(Entity Relationship Diagram).
   &nbsp; 
 * Communication skill is needed when I need to represent the idea of may app to class with slide deck. Also, I need to communicate with my educator for all the issues relates to my project.
   &nbsp; 
-* Searching skill is very useful when I need help or want to dive into specific content in coding. [stackoverflow](https://stackoverflow.com/）is my frequent visited forum when doing my project.
+* Searching skill is very useful when I need help or want to dive into specific content in coding. [stackoverflow](https://stackoverflow.com/)is my frequent visited forum when doing my project.
   &nbsp; 
 * Utilizing GitHub to host the project repository and manger my project  with proper version control commands.
   &nbsp; 
@@ -297,7 +297,7 @@ Comparison operators are for comparing two values and return a truthy or falsy b
 * `<= less than or equal`
 
 6. If and If/else statements
-If statements is the fundamental conditional statement which is widely used in many other programming language. The parentheses block following `if` clause will evaluate a value or expression in side. If the condition(the value or expression) evaluates to a truthy value, then the code within its curly brace body executes. Otherwise, the the code within its curly brace body will not execute. An `else if` blocks can be added to an initial `if` block to examine an extra condition. An`else`block can be attached after a`if`statement or a chain of`if-else if`blocks. The`else`block will only be executed when all thepreceding `if`condition evaluates to false.
+If statements is the fundamental conditional statement which is widely used in many other programming language. The parentheses block following `if` clause will evaluate a value or expression in side. If the condition(the value or expression) evaluates to a truthy value, then the code within its curly brace body executes. Otherwise, the the code within its curly brace body will not execute. An `else if` blocks can be added to an initial `if` block to examine an extra condition. An`else`block can be attached after a`if`statement or a chain of`if-else if`blocks. The`else`block will only be executed when all the preceding `if`condition evaluates to false.
 
 ![if](docs/Q7/if.jpg)
 
@@ -357,7 +357,7 @@ for (let x of [1, 2, 3,4]) {
 // 2
 ```
 
-In this for loop example, we can see the output result onlt contains 1 and 2, becuase when the condition '`x === 2`' is applied and evaluated to be true, the `break` clause will make the execution end and leave the current statement which is the loop. Also the sequence of execution matters. If the `break` clause is placed before the `console.log(x)` execution, then it will exit the current statement immediately, which means the rest of executions in the second iteration will be ignored as well.
+In this for loop example, we can see the output result contains 1 and 2, because when the condition '`x === 2`' is applied and evaluated to be true, the `break` clause will make the execution end and leave the current statement which is the loop. Also the sequence of execution matters. If the `break` clause is placed before the `console.log(x)` execution, then it will exit the current statement immediately, which means the rest of executions in the second iteration will be ignored as well.
 
 *continue* clause
 
@@ -419,30 +419,30 @@ String(123) // (explicit)'123'
 123 + ''    // (implicit)'123'
 
 ```
-We can see both string type coercion produceing the same string '123', and yet the second one are applied implicitly with `+`operator.
+We can see both string type coercion producing the same string '123', and yet the second one are applied implicitly with `+`operator.
 
 ```js script
 String(Symbol('star'))   // 'Symbol(star)'
 Symbol('star') + ''     // TypeError is thrown
 
 ```
-From the above we can see symbol conversion can only appiled in the explicit way.
+From the above we can see symbol conversion can only be applied in the explicit way.
 
 2. Boolean conversion
 While the explicit way to convert value to a boolean is by using Boolean() built-in function, the implicit conversion occurs by applying logical operators `||`, `&& `, and `!` or within the logical context.
 
 ```js script
-Boolean('')           // (explicit) retrun false
-Boolean(0)            // (explicit) retrun false     
-Boolean(-0)           // (explicit) retrun false
-Boolean(NaN)          // (explicit) retrun false
-Boolean(null)         // (explicit) retrun false
-Boolean(undefined)    // (explicit) retrun false
-Boolean(false)        // (explicit) retrun false
-Boolean({})           // (explicit) retrun true
-Boolean([])           // (explicit) retrun true
-Boolean(6)            // (explicit) retrun true
-if (6) { ... }        // (implicitly coercion within logical context, condition 6 will be evaluated to true)
+Boolean('')           // (explicit) return false
+Boolean(0)            // (explicit) return false     
+Boolean(-0)           // (explicit) return false
+Boolean(NaN)          // (explicit) return false
+Boolean(null)         // (explicit) return false
+Boolean(undefined)    // (explicit) return false
+Boolean(false)        // (explicit) return false
+Boolean({})           // (explicit) return true
+Boolean([])           // (explicit) return true
+Boolean(6)            // (explicit) return true
+if (6) { ... }        // (implicitly return within logical context, condition 6 will be evaluated to true)
 !!6                  // (implicit due to logical operator) return true
 6 || 'i18n'          // (implicit due to logical operator) return 6
 6 && 'i18n'          // (implicit due to logical operator) return 'i18n'
@@ -499,7 +499,7 @@ String(Symbol('star'))   // TypeError is thrown
 Symbol('star') + ''     // TypeError is thrown
 
 ```
-From the above we can see symbol conversion can not be appiled in neither explicit nor implicit way.
+From the above we can see symbol conversion can not be applied in neither explicit nor implicit way.
 
 <details>
  <summary>Sources</summary>
@@ -526,7 +526,7 @@ const c = 'We\'ll win.';     // apply escaping single quote with backslash
 
 ```
 * Number
-The number data type consists of negative or positive numbers with or without decimal place, numbers which be represented with exponential notation and three symbolic values which are `Infinity`, `-Infinity` and `NaN`. `Infinity` symbolizes the mathematical Infinity `∞`, which is an endless value that cannot be specified. `Infinity` and `-Infinity` is usually produced by deviding any nonzero number by zero. Meanwhile the `NaN` represents `Not a Number` value. When the cases are an invalid or an undefined mathematical operation applied, `NaN` is produced.
+The number data type consists of negative or positive numbers with or without decimal place, numbers which be represented with exponential notation and three symbolic values which are `Infinity`, `-Infinity` and `NaN`. `Infinity` symbolizes the mathematical Infinity `∞`, which is an endless value that cannot be specified. `Infinity` and `-Infinity` is usually produced by dividing any nonzero number by zero. Meanwhile the `NaN` represents `Not a Number` value. When the cases are an invalid or an undefined mathematical operation applied, `NaN` is produced.
 
 ```js script
 let a = 42;         // integer
@@ -581,7 +581,7 @@ A symbol is a unique and immutable data type which mean every time the Symbol() 
 
 ```js script
 const mySymbol = Symbol()
-mySymbol === Symbol() //false, because every symbol() produce unique symnol
+mySymbol === Symbol() //false, because every symbol() produce unique symbol
 
 const Name = Symbol()
 const person = {
@@ -598,7 +598,7 @@ console.log(person[Walk]()) //'Person is Walking'
 **2. Composite data types**
 
 * Object 
-The object is a combination data type which is capable of storing collections of data inside. Normally a object in JavaScript has one or more key-value pairs as properties being wrapped in a set of curly braces. The key value pairs inside a object are comma-seperated. The property key name is constantly a string data type while the the property value can be any data type in JavaScript and even another object. In addition, when it comes to the case that the property value is a function data type in a key value pair, that property is commonly called method to differentiate it from other properties.
+The object is a combination data type which is capable of storing collections of data inside. Normally a object in JavaScript has one or more key-value pairs as properties being wrapped in a set of curly braces. The key value pairs inside a object are comma-separated. The property key name is constantly a string data type while the the property value can be any data type in JavaScript and even another object. In addition, when it comes to the case that the property value is a function data type in a key value pair, that property is commonly called method to differentiate it from other properties.
 
 ```js script
 let emptyObject = {};
@@ -614,7 +614,7 @@ let person = {
 ```
 
 * Array 
-An array is a type of object that various values as elements are enclosed in a set of square brackets and the whole as a single variable. The elements inside a array are comma-seperated. Each element in an array has a numeric index, and the element itself can be any data type in JavaScript. One imprtant thing of array needs to be memorized is that the index start from zero and the first element in a array is array[0].
+An array is a type of object that various values as elements are enclosed in a set of square brackets and the whole as a single variable. The elements inside a array are comma-separated. Each element in an array has a numeric index, and the element itself can be any data type in JavaScript. One important thing of array needs to be memorized is that the index start from zero and the first element in a array is array[0].
 
 ```js script
 const colors = ["Red", "Yellow", "Green", "Orange"];
@@ -773,7 +773,7 @@ console.log( arr.concat(arrayLikeObject) ); // output: [4,2,ultimate,number]
 ```
 
 * Iterate: forEach
-The forEacch method applies a function on all elements in an array. The syntax is:
+The forEach method applies a function on all elements in an array. The syntax is:
 
 ```js script
 array.forEach(function(item, index, array) {
@@ -784,7 +784,7 @@ array.forEach(function(item, index, array) {
 ```js script
 ["apple", "banana", "Cherry "].forEach((item, index, array) => {
   console.log(`${item} is at index ${index} in ${array}`);
-}); // It will iterate throuogh the array from index 0 to the end of array
+}); // It will iterate through the array from index 0 to the end of array
 ```
 
 * indexOf(), lastIndexOf() and includes()
@@ -917,7 +917,7 @@ let str = "apple";
 console.log( str.split('') ); // output: ["a", "p", "p", "l", "e"] This is useful when we want to split the string into an array of letters.
 ```
 
-The `join(separator)` method combines all array elements into a string and derveloper can specify the separator as a argument. The default separator is a comma.
+The `join(separator)` method combines all array elements into a string and developer can specify the separator as a argument. The default separator is a comma.
 
 ```js script
 let colors = ['red', 'blue', 'white'];
@@ -973,7 +973,7 @@ An object can be created inJavaScript by two ways:
 The object literal is simply an object being defined in the curly brackets with key/value pairs separated by a comma. The key would be property name and the value will be a value or function.
 
 ```js script
-let empty = {}; // empty object with no key/value pair indide
+let empty = {}; // empty object with no key/value pair inside
 
 // object with properties & method
 let person = { 
@@ -988,7 +988,7 @@ let person = {
 ```
 
 2. Objects() Constructor
-There are two object contructors methods. One is Object() constructor function creates an object wrapper for the given value by using the new keyword. Developer can define properties and methods with dot notation or through the square brackets, as shown below.
+There are two object constructors methods. One is Object() constructor function creates an object wrapper for the given value by using the new keyword. Developer can define properties and methods with dot notation or through the square brackets, as shown below.
 
 ```js script
 let person = new Object(); //  create an empty object
@@ -1004,7 +1004,7 @@ person.getFullName = function () {
 
 ```
 
-Another contructors method is Object.create() which employs an present object as prototype to return an object. The yntax is:
+Another constructor method is Object.create() which employs an present object as prototype to return an object. The syntax is:
 
 ```js script
 Object.create(prototype[, propertiesObject])
@@ -1057,7 +1057,7 @@ console.log(returnedTarget);
 ```
 
 * defineProperties() and defineProperty()
-Thie defineProperties() method adds or changes plural  properties on an object straightaway and returns the object. While defineProperty() has the same functionality as defineProperties method but only defines with single propertiy at one time.
+The defineProperties() method adds or changes plural  properties on an object straightaway and returns the object. While defineProperty() has the same functionality as defineProperties method but only defines with single property at one time.
 
 ```js script
 // defineProperties()
@@ -1120,7 +1120,7 @@ person.name = 'Ben';  // Error is thrown in strict mode
 ```
 
 * getPrototypeOf()
-As the name suggests, freeze() method is used for getting the protptype of the given object.
+As the name suggests, freeze() method is used for getting the prototype of the given object.
 
 ```js script
 const prototype1 = {
@@ -1147,7 +1147,7 @@ console.log(object1.hasOwnProperty('height'));
 ```
 
 * seal()
-While `seal()` and frozen() method are both used to create non extensible objects, `seal()` enables modificatons on the existing properties where as freeze() doesn't.
+While `seal()` and frozen() method are both used to create non extensible objects, `seal()` enables modifications on the existing properties where as freeze() doesn't.
 
 ```js script
 const object1 = {
@@ -1192,14 +1192,14 @@ function Cat(name, breed) {
   this.breed = breed;
 }
 
-cat1 = new Cat("Catty", "Birman");
+cat1 = new Cat("Catty", "Birdman");
 console.log(cat1.toString()); // [object Object] default object display
 // We can defined own version of toString() method
 Cat.prototype.toString = function () {
   return `${this.name} is a/an ${this.breed}.`;
 };
 
-console.log(cat1.toString()); // Catty is a/an Birman.
+console.log(cat1.toString()); // Catty is a/an Birdman.
 ```
 
 * keys()
@@ -1255,14 +1255,14 @@ const data = {
     "hobby": {
 	  "reading" : true,
 	  "gaming" : false,
-	  "sport" : "bastketball"
+	  "sport" : "basketball"
     },
     "font_end_skills" : ["JavaScript", "HTML", "CSS"]
 }
 
 // accessing JSON object by dot notation and square brackets
 console.log(data.name); // Leon
-console.log(data['hobby']); // { gaming: false, reading: true, sport: "bastketball"}
+console.log(data['hobby']); // { gaming: false, reading: true, sport: "basketball"}
 console.log(data.hobby.gaming); // false
 console.log(data.font_end_skills[1]); // HTML
 ```
@@ -1301,7 +1301,7 @@ console.log(obj.name); // Leon
 
 ---
 
-#### Q13. For the code snippet provided below, write comments for each line of code to explain its functionality. In your comments you must demonstrates your ability to recognise and identify functions, ranges and classes.
+#### Q13. For the code snippet provided below, write comments for each line of code to explain its functionality. In your comments you must demonstrates your ability to recognize and identify functions, ranges and classes.
 
 ```js script
 /* declares a Car class object and the defining code would be coded between the curly braces. */
@@ -1309,23 +1309,23 @@ class Car {
 
 /* The constructor() method is for initializing the properties of this object. It is called every time a new instance 
 of a class object is created in JavaScript. Here this constructor accepts an argument 'brand' and will make use of this 
-argument inside the contructor code body.*/
+argument inside the constructor code body.*/
 
   constructor(brand) {
   
   /* The 'this' keyword here is referencing to current newly created instance object. And by applying the dot notation
    on `this` keyword, the 'brand' parameter will be assigned to the a defined property 'name' on this car instance object.*/
 
-    this.carname = brand;
+    this.carName = brand;
   }
 
   /* A class object method with a defined name 'present' is defined and it can be called on the instance of the Car class object. */
 
   present() {
 
-  /* This method returns an interpolated string of 'I have a ' concatenated with value of the carname property of this car instance. */
+  /* This method returns an interpolated string of 'I have a ' concatenated with value of the carName property of this car instance. */
 
-    return 'I have a ' + this.carname;
+    return 'I have a ' + this.carName;
   }
 }
 
@@ -1335,7 +1335,7 @@ all the instance properties and methods. */
 class Model extends Car {
 
 /* The constructor() method is for initializing the properties of this object. It is called every time a new instance of a class 
-object is created in JavaScript. Here this constructor accepts two arguments 'brand' and 'mod' and will make use of these arguments inside the contructor code body.*/
+object is created in JavaScript. Here this constructor accepts two arguments 'brand' and 'mod' and will make use of these arguments inside the constructor code body.*/
 
   constructor(brand, mod) {
 
@@ -1355,14 +1355,14 @@ this Model class and the mod parameter is passed from constructor to assign to t
 
 /* This method returns an interpolated string of three parts join together. The present method is inherited from the parent 
 Car class with the extend and super syntax. So in this Model class the present method can be invoked as well. The model is the 
-property of this Model class. Because the + operator is applied here and the second part of interpolataion is a string data 
+property of this Model class. Because the + operator is applied here and the second part of interpolation is a string data 
 type, so the value of the model property will be implicitly convert to a string by applying toString() under the hood. At 
 last, all three parts are concatenated to be a whole string and being return. */
 
     return this.present() + ', it was made in ' + this.model;
   }
 }
-/* It declears an array which contains three popular car band name strings as elements and be assigned to a variable 'makes' 
+/* It declare an array which contains three popular car band name strings as elements and be assigned to a variable 'makes' 
 with `let` keyword which mean this makes variable is mutable. */
 
 let makes = ["Ford", "Holden", "Toyota"]
@@ -1372,7 +1372,7 @@ And this 40 elements start at the number 1980 and increment by 1. The i represen
 
 let models = Array.from(new Array(40), (x,i) => i + 1980)
 
-/* It declars a function with two parameters 'min' and 'max'. */
+/* It declares a function with two parameters 'min' and 'max'. */
 
 function randomIntFromInterval(min,max) { // min and max included
 
@@ -1392,7 +1392,7 @@ of model array is 1980 and increment by, so the last element will be 2019. */
 for (model of models) {
 
 /* In each iteration the randomIntFromInterval method of this Model class will be invoked and being passed two arguments. 
-These arguments actually represent the minimum index and maximum index of the makes array. So the returnning value of randomIntFromInterval method will be a random integer between 0 and 2 inclusively. By applying suqare brackets with `makes` 
+These arguments actually represent the minimum index and maximum index of the makes array. So the returning value of randomIntFromInterval method will be a random integer between 0 and 2 inclusively. By applying square brackets with `makes` 
 array, we can access to a random element in makes array and assign this element to make variable. */
 
   make = makes[randomIntFromInterval(0,makes.length-1)]
@@ -1404,16 +1404,16 @@ random year element from models array to model variable. */
 
 /* In each iteration, a new Model instance is created with new keyword and the current make and model placeholders as 
 parameters will be passed to the Model constructor and the value of make and model will be assign to respective Model 
-properties. At last, this Model instance will be assigned to a variable name mycar. */
+properties. At last, this Model instance will be assigned to a variable name myCar. */
 
-  mycar = new Model(make, model);
+  myCar = new Model(make, model);
 
-/* Becase mycar as our instantiated Model object instance has a same show() method as Model has, the show() method can be 
+/* Because myCar as our instantiated Model object instance has a same show() method as Model has, the show() method can be 
 invoked and return a string like'I have a (brand) and it was made in (year)'. The the console.log() method will output this 
 string in the console.*/
 
-  console.log(mycar.show())
-/*This loop will iterate 40 times becase the length of models array is 40 and it output 40 line of string in the console.*/
+  console.log(myCar.show())
+/*This loop will iterate 40 times because the length of models array is 40 and it output 40 line of string in the console.*/
 }
 
 ```
